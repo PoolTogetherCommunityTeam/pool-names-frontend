@@ -10,12 +10,12 @@ export default {
   
   state: () => ({ 
     discountPercentage: 0,
-    tldName: ".testpool",
-    tldAddress: "0x4da0a46cc54439b1dE0203d376b98D988697091d", // TODO
+    tldName: ".pool",
+    tldAddress: "0xf2C9E463592BD440f0D422E944E5F95c79404586", // TODO
     tldContract: null,
-    tldChainId: 421613,
-    tldChainName: "Arbitrum Goerli Testnet",
-    minterAddress: "0x5214e8d3b2e00c415D9d888dc3AAc92E2Aab4D1e", // TODO
+    tldChainId: 10,
+    tldChainName: "Optimism",
+    minterAddress: "0x77AE10Dd2E7Fc7b2819602D483765D705E9B8DDA", // TODO
     minterContract: null,
     minterPaused: true,
     minterTldPrice1: 0.02,

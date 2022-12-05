@@ -57,7 +57,7 @@ export default function useChainHelpers() {
       } else if (networkId === 10) {
         // Optimism
         urls = [
-          "https://mainnet.optimism.io"
+          "https://1rpc.io/op"
         ]; 
       } else if (networkId === 56) {
         // BSC mainnet

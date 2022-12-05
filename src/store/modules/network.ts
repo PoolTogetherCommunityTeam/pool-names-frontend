@@ -10,14 +10,14 @@ export default {
     networkCurrency: "ETH",
     networkName: "Unsupported Network",
     supportedNetworks: {
-      421613: "Arbitrum Goerli Testnet"
+      10: "Optimism"
     }
   }),
 
   getters: { 
     getBlockExplorerBaseUrl() {
       // TODO
-      return "https://goerli.arbiscan.io";
+      return "https://optimistic.etherscan.io";
     },
     
     getChainId() {
@@ -68,7 +68,7 @@ export default {
   mutations: { 
     setNetworkData(state) {
       // TODO
-      state.networkName = "Arbitrum Goerli Testnet";
+      state.networkName = "Optimism";
       state.networkCurrency = "ETH";
     }
   },
