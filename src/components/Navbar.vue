@@ -3,7 +3,7 @@
     <div class="container-fluid">
       <router-link to="/" class="navbar-brand">
         <img src="../assets/pool-logo.png" alt="" class="d-inline-block align-text-top navbar-img">
-        PoolTogether Name Service
+        PoolTogether Names
       </router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
