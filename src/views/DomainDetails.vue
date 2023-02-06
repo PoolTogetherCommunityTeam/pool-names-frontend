@@ -23,6 +23,9 @@
 
               <div class="col-sm-9 punk-text text-break">
                 {{holderData}}
+                <a :href="getBlockExplorerBaseUrl+'/address/'+holderData" target="_blank">
+                  <i class="bi bi-box-arrow-up-right"></i>
+                </a>
               </div>
             </div>
 
