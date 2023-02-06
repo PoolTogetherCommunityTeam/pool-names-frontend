@@ -1,14 +1,17 @@
 <template>
-  <div class="mb-3 row domain-data mt-4" v-if="customData" :key="dataKey" v-for="(dataValue, dataKey) in customData">
-    <div class="col-sm-3 punk-title">
-      {{dataKey.charAt(0).toUpperCase() + dataKey.slice(1)}}
-    </div>
+  <div v-if="customData">
+    <div class="mb-3 row domain-data mt-4" :key="dataKey" v-for="(dataValue, dataKey) in customData">
+      <div class="col-sm-3 punk-title">
+        {{dataKey.charAt(0).toUpperCase() + dataKey.slice(1)}}
+      </div>
 
-    <div class="col-sm-9 punk-text text-break">
-      <span v-if="dataKey=='imgAddress' && dataValue.startsWith('http')"><a target="_blank" :href="dataValue">{{shortUrl(dataValue)}}</a></span>
-      <span v-else-if="dataKey=='url'"><a target="_blank" :href="dataValue">{{dataValue}}</a></span>
-      <span v-else-if="dataKey=='twitter'"><a target="_blank" :href="getTwitterUrl(dataValue)">{{dataValue}}</a></span>
-      <span v-else>{{dataValue}}</span>
+      <div class="col-sm-9 punk-text text-break">
+        <span v-if="dataKey=='imgAddress' && dataValue.startsWith('http')"><a target="_blank" :href="dataValue">{{shortUrl(dataValue)}}</a></span>
+        <span v-else-if="dataKey=='content'"><a target="_blank" :href="dataValue">{{dataValue}}</a></span>
+        <span v-else-if="dataKey=='url'"><a target="_blank" :href="dataValue">{{dataValue}}</a></span>
+        <span v-else-if="dataKey=='twitter'"><a target="_blank" :href="getTwitterUrl(dataValue)">{{dataValue}}</a></span>
+        <span v-else>{{dataValue}}</span>
+      </div>
     </div>
   </div>
 
@@ -198,13 +201,11 @@ export default {
             });
             console.log(receipt);
             this.btnInactive = false;
-            this.inputUrl = this.domainData.url;
           }
         } catch (e) {
           this.btnInactive = false;
           console.log(e);
           this.toast(e.message, {type: TYPE.ERROR});
-          this.inputUrl = this.domainData.url;
         }
       }
     },
@@ -261,8 +262,12 @@ export default {
         this.fields.push({dataKey: "imgTokenId", dataValue: "", valuePlaceholder: "Only needed if img is NFT"});
       }
 
+      if(this.fields.findIndex(x => x.dataKey == "content") === -1) {
+        this.fields.push({dataKey: "content", dataValue: "", valuePlaceholder: "Add IPFS link"});
+      }
+
       if(this.fields.findIndex(x => x.dataKey == "url") === -1) {
-        this.fields.push({dataKey: "url", dataValue: "", valuePlaceholder: "Add any URL to redirect domain to"});
+        this.fields.push({dataKey: "url", dataValue: "", valuePlaceholder: "Add HTTP redirect URL"});
       }
 
       if(this.fields.findIndex(x => x.dataKey == "twitter") === -1) {
