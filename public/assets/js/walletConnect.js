@@ -397,7 +397,7 @@
       e = 10; // TODO: change chain ID
 			let r;
 			const n = s[e];
-			return n && (r = `https://rpc.ankr.com/optimism`), r // TODO
+			return n && (r = `https://rpc.ankr.com/multichain/bee04352d31fa315fbb111c91c2afd01130de7553ee9af986b99793640ae9f0e`), r // TODO
 		}
 
 		function z(e, t) {
