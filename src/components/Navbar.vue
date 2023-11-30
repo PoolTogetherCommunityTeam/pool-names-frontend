@@ -17,9 +17,9 @@
           <div class="navbar-menu-buttons">
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
-              href="https://pooly.me/shop/" 
+              href="https://pooly.me" 
               target="_blank"
-            >Shop</a>
+            >PoolTogether Merch Store</a>
 
             <a 
               class="btn btn-primary mx-2 navbar-menu-btn" 
