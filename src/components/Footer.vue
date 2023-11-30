@@ -9,7 +9,7 @@
     <router-link v-if="isUserMinterAdmin || isUserRoyaltyFeeUpdater || isUserTldAdmin" to="/admin">Admin</router-link>
     <span v-if="isUserMinterAdmin || isUserRoyaltyFeeUpdater || isUserTldAdmin"> | </span>
 
-    <a target="_blank" href="https://pooltogether.com/">Operated by noxe🌊🏆.eth</a> | 
+    <a target="_blank" href="https://twitter.com/DiurneNoxe">Operated by noxe🌊🏆.eth</a> | 
     <a target="_blank" href="https://punk.domains">Powered by Punk Domains</a>
   </div>
 
