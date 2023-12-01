@@ -69,6 +69,10 @@ hr {
   color: black;
 }
 
+.img-fluid.main-img.rounded {
+  width: 500px;
+}
+
 .span-link:hover {
   color: #1c1b1b;
   text-decoration: none;
