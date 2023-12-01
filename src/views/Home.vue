@@ -354,7 +354,12 @@ export default {
 .error {
   color: #DBDFEA;
 }
-
+.body {
+  background-image: url('src\assets\why_CryptoBG.svg');
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
 .main-img {
   width: 4em;
 }
