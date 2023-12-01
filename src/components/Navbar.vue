@@ -147,7 +147,7 @@ export default {
 }
 .navbar-img {
   margin-right: 5px;
-  height: 50px;
+  height: 120px;
 }
 
 @media only screen and (max-width: 767px) {
