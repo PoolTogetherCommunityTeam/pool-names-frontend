@@ -73,6 +73,10 @@ hr {
   width: 500px;
 }
 
+.d-inline-block align-text-top navbar-img {
+  width: 300px;
+}
+
 .span-link:hover {
   color: #1c1b1b;
   text-decoration: none;
